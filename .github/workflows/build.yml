@@ -21,7 +21,7 @@ jobs:
         run: npm install
 
       - name: Trivy file scan
-        run: trivy fs . > trivyfs.t deploy 
+        run: trivy fs . > trivyfs.txt
       - name: Docker build and push
         run: |
           docker build -t tic-tac-toe .
